@@ -1,3 +1,9 @@
+import os
+import re
+import errno
+
+directory = os.path.join('D:\', folder_name)
+
 for root, subdirectories, files in os.walk(directory):
     for (a, subdirectory) in enumerate(subdirectories, start=1):
         path = os.path.join(root, subdirectory)
