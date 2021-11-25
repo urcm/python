@@ -1,5 +1,5 @@
 
-directory = 'F:'
+directory = 'F:\'
 
 folderlistfull, folderlistfiles  = [], []
 for root, subdirectories, files in os.walk(directory):
