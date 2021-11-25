@@ -1,3 +1,3 @@
 # Python
-Reusable python codes.
+Reusable python codes for recursive transactions.
 
