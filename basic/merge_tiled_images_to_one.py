@@ -12,4 +12,13 @@ for root, subdirectories, files in os.walk(directory):
                 pass
             else:
                 arry.append(file)
+                
         images = []
+        for x in arry:
+            images.append(Image.open(x))
+        widths, heights = zip(*(i.size for i in images))
+
+        total_width = sum(widths)
+        max_height = max(heights)
+
+        new_im = Image.new('RGB', (total_width, max_height))
