@@ -28,4 +28,6 @@ for root, subdirectories, files in os.walk(directory):
             new_im.paste(im, (x_offset, 0))
             x_offset += im.size[0]
 
+        im_pth = os.path.join(directory, subdirectory + '.jpg')
+        new_im.save(im_pth)
     
