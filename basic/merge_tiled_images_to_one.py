@@ -30,4 +30,8 @@ for root, subdirectories, files in os.walk(directory):
 
         im_pth = os.path.join(directory, subdirectory + '.jpg')
         new_im.save(im_pth)
+        
+        image = Image.open(im_pth)
+        new_image = image.resize(((int(total_width / 2), int(max(heights) / 2))))
+        new_image.save(im_pth)
     
